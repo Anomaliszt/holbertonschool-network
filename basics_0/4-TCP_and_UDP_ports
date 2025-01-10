@@ -1,8 +1,3 @@
 #!/usr/bin/env bash
 # Shows listening sockets and shows the PID and name of the program to which each socket belongs.
-
-echo "Active Internet connections (only servers)"
 netstat -tulnp | grep 'LISTEN'
-
-echo "Active UNIX domain sockets (only servers)"
-netstat -lxnp | grep 'LISTEN'
