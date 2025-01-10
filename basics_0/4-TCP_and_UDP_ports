@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Shows listening sockets and shows the PID and name of the program to which each socket belongs.
-sudo netstat -tulnxp | grep -E 'LISTEN|UNCONN|ACC'
+netstat -tulnxp | grep -E 'LISTEN|UNCONN|ACC'
