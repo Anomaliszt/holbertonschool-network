@@ -3,11 +3,13 @@
 
 # Check if exactly one argument is provided
 if [ $# -ne 1 ]; then
-# Display usage message if argument count is incorrect
+  # Display usage message if argument count is incorrect
   echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
   exit 1
 fi
+
 # Assign the argument (IP address) to `ip_address`
 ip_address="$1"
+
 # Ping the IP address with 5 packets
 ping -c 5 "$ip_address"
